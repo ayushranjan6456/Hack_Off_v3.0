@@ -33478,14 +33478,14 @@ section-dark .subtitle b {
     margin: 0 2px !important;
     padding: 0 !important;
   }
-  #faqs .vc_col-lg-6{
-    padding: 0 3px !important;
-  }
   #faqs .vc_col-lg-6 .vc_row{
     margin: 0px !important;
   }
   #faqs .vc_col-lg-6 .vc_row .vc_column-inner{
     padding: 0px !important;
+  }
+  #faqs .accordionItem .accordionItem_control{
+    display: none;
   }
 }
 
@@ -33765,3 +33765,4 @@ section-dark .subtitle b {
     box-sizing: border-box;
   }
 }
+
