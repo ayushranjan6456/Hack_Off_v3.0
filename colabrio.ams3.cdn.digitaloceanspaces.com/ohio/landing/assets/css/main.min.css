@@ -32326,7 +32326,7 @@ section-dark .subtitle b {
 .main-section {
   padding-top: 130px;
   padding-bottom: 0;
-  background-color: #72e4f86b;
+  background-color: #68e8ff1a;
 }
 @media screen and (max-width: 768px) {
   .main-section {
@@ -33464,4 +33464,304 @@ section-dark .subtitle b {
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
+}
+.vc_column-inner .service{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  #faqs .vc_col-lg-6 .page-container{
+    margin: 0 2px !important;
+    padding: 0 !important;
+  }
+  #faqs .vc_col-lg-6{
+    padding: 0 3px !important;
+  }
+  #faqs .vc_col-lg-6 .vc_row{
+    margin: 0px !important;
+  }
+  #faqs .vc_col-lg-6 .vc_row .vc_column-inner{
+    padding: 0px !important;
+  }
+}
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #273059;
+  border: 0px none #ffffff;
+  border-radius: 34px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #273059;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #273059;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+
+.tg-brands1 {
+  width: 100%;
+  float: left;
+  list-style: none;
+}
+.tg-brands1 li {
+  width: 33%;
+  float: left;
+  list-style-type: none;
+}
+.tg-brands1 li:nth-child(1),
+.tg-brands1 li:nth-child(2),
+.tg-brands1 li:nth-child(3),
+.tg-brands1 li:nth-child(4),
+.tg-brands1 li:nth-child(5),
+.tg-brands1 li:nth-child(6) {
+  border-bottom: 1px solid #ddd;
+}
+.tg-brands1 li:nth-child(1),
+.tg-brands1 li:nth-child(5) {
+  border-left: 1px solid transparent;
+}
+.tg-brands1 li:nth-child(2),
+.tg-brands1 li:nth-child(3),
+.tg-brands1 li:nth-child(5),
+.tg-brands1 li:nth-child(6) {
+  border-left: 1px solid #ddd;
+}
+.tg-brands1 li figure {
+  margin: 0;
+  width: 100%;
+  float: left;
+}
+.tg-brands1 li figure a {
+  display: block;
+}
+.tg-brands1 li figure a img {
+  display: block;
+}
+
+@media (max-width: 426px) {
+  .hiden,
+  .tg-brands1 li:nth-child(4),
+  .tg-brands1 li:nth-child(6) {
+    display: none;
+  }
+  .tg-brands li:nth-child(1),
+  .tg-brands li:nth-child(3){
+    border-left: 1px solid transparent !important;
+  }
+  .tg-brands li:nth-child(2),
+  .tg-brands li:nth-child(4){
+    border-left: 1px solid #ddd !important;
+  }
+  .tg-brands1 li{
+    margin: 0;
+    width: 50%;
+    float: left;
+  }
+  .tg-brands li{
+    margin: 0;
+    width: 50% !important;
+    float: left;
+  }
+  .tg-brands1 li figure a img,
+  .tg-brands li figure a img,
+  .edu-part a img {
+    padding: 0 10px;
+  }
+}
+
+.tg-brands4 {
+  width: 100%;
+  float: left;
+  list-style: none;
+}
+.tg-brands4 li {
+  width: 50%;
+  float: left;
+  list-style-type: none;
+}
+
+.tg-brands4 li figure a {
+  display: block;
+}
+.tg-brands4 li figure a img {
+  display: block;
+}
+.tg-brands4 li figure {
+  margin: 0;
+}
+
+.tg-brands4 li:nth-child(1),
+.tg-brands4 li:nth-child(2) {
+  border-bottom: 1px solid #ddd;
+}
+.tg-brands4 li:nth-child(2) {
+  border-left: 1px solid #ddd;
+}
+
+@media (max-width: 426px) {
+  .tg-brands4 li {
+    width: 100%;
+  }
+  .tg-brands4 li:nth-child(2) {
+    border-left: 1px solid transparent;
+  }
+}
+
+.tg-brands2 {
+  width: 100%;
+  float: left;
+  list-style: none;
+}
+.tg-brands2 li {
+  width: 33%;
+  float: left;
+  list-style-type: none;
+}
+.tg-brands2 li:nth-child(1),
+.tg-brands2 li:nth-child(2),
+.tg-brands2 li:nth-child(3),
+.tg-brands2 li:nth-child(4) {
+  border-bottom: 0px solid #ddd;
+}
+.tg-brands2 li:nth-child(1),
+.tg-brands2 li:nth-child(5) {
+  border-left: 0px solid transparent;
+}
+.tg-brands2 li:nth-child(2),
+.tg-brands2 li:nth-child(3),
+.tg-brands2 li:nth-child(4),
+.tg-brands2 li:nth-child(6),
+.tg-brands2 li:nth-child(7),
+.tg-brands2 li:nth-child(8) {
+  border-left: 0px solid #ddd;
+}
+.tg-brands2 li figure {
+  margin: 0;
+  width: 100%;
+  float: left;
+}
+.tg-brands2 li figure a {
+  display: block;
+}
+.tg-brands2 li figure a img {
+  display: block;
+}
+/*==============================================
+			Packages Style						
+==============================================*/
+.tg-brands {
+  width: 100%;
+  float: left;
+  list-style: none;
+  box-sizing: border-box;
+}
+.tg-brands li {
+  width: 25%;
+  float: left;
+  list-style-type: none;
+}
+.tg-brands li:nth-child(1),
+.tg-brands li:nth-child(2),
+.tg-brands li:nth-child(3),
+.tg-brands li:nth-child(4) {
+  border-bottom: 1px solid #ddd;
+}
+.tg-brands li:nth-child(1),
+.tg-brands li:nth-child(5) {
+  border-left: 1px solid transparent;
+}
+.tg-brands li:nth-child(2),
+.tg-brands li:nth-child(3),
+.tg-brands li:nth-child(4),
+.tg-brands li:nth-child(6),
+.tg-brands li:nth-child(7),
+.tg-brands li:nth-child(8) {
+  border-left: 1px solid #ddd;
+}
+.tg-brands li figure {
+  margin: 0;
+  width: 100%;
+  float: left;
+}
+.tg-brands li figure a {
+  display: block;
+}
+.tg-brands li figure a img {
+  display: block;
+}
+
+.tg-brands2 {
+  width: 100%;
+  float: left;
+  list-style: none;
+}
+.tg-brands2 li {
+  width: 33%;
+  float: left;
+  list-style-type: none;
+}
+.tg-brands2 li:nth-child(1),
+.tg-brands2 li:nth-child(2),
+.tg-brands2 li:nth-child(3),
+.tg-brands2 li:nth-child(4) {
+  border-bottom: 0px solid #ddd;
+}
+.tg-brands2 li:nth-child(1),
+.tg-brands2 li:nth-child(5) {
+  border-left: 0px solid transparent;
+}
+.tg-brands2 li:nth-child(2),
+.tg-brands2 li:nth-child(3),
+.tg-brands2 li:nth-child(4),
+.tg-brands2 li:nth-child(6),
+.tg-brands2 li:nth-child(7),
+.tg-brands2 li:nth-child(8) {
+  border-left: 0px solid #ddd;
+}
+.tg-brands2 li figure {
+  margin: 0;
+  width: 100%;
+  float: left;
+}
+.tg-brands2 li figure a {
+  display: block;
+}
+.tg-brands2 li figure a img {
+  display: block;
+}
+
+@media (max-width: 560px) {
+  .tg-brand3 {
+    width: 50% !important;
+    box-sizing: border-box;
+  }
 }
