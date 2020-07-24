@@ -33465,3 +33465,16 @@ section-dark .subtitle b {
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
 }
+
+@media screen and (max-width: 576px) {
+  #faqs .vc_col-lg-6 .page-container{
+    margin: 2px !important;
+    padding: 0 !important;
+  }
+  #faqs .vc_col-lg-6 .vc_row{
+    margin: 0px !important;
+  }
+  #faqs .vc_col-lg-6 .vc_row .vc_column-inner{
+    padding: 0px !important;
+  }
+}
