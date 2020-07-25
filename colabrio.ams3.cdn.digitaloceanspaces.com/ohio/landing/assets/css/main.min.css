@@ -16120,42 +16120,6 @@ div[class^="vc_col-"] {
   -o-transition-property: opacity, visibility;
   transition-property: opacity, visibility;
 }
-.page-preloader .loader {
-  width: 6px;
-  height: 6px;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-animation: typing 1s linear infinite alternate;
-  animation: typing 1s linear infinite alternate;
-}
-.page-preloader.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-.page-preloader.hide {
-  display: none;
-}
-.page-preloader.percentage-preloader .sk-percentage {
-  height: 100%;
-  width: 0;
-  background-color: #eefcfa;
-  left: 0;
-  position: fixed;
-}
-.page-preloader.percentage-preloader .sk-percentage-percent {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-size: 6em;
-  font-weight: 600;
-  letter-spacing: -0.02rem;
-}
 @media screen and (max-width: 1024px) {
   .page-preloader {
     display: none;
@@ -17572,7 +17536,7 @@ button.search-submit.btn-loading .ion {
 .site-header .site-branding .for-onepage img,
 .site-header .site-branding .logo img,
 .site-header .site-branding .mobile-logo img {
-  max-height: 66px;
+  /* max-height: 66px; */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19510,7 +19474,6 @@ body:not(.is-mobile-menu).with-header-6 .btn.purchase-theme {
   position: relative;
 }
 .main-nav.with-counters .main-nav-container .menu-item-depth-0 > a span:before {
-  content: "0" counter(number);
   display: inline-block;
   opacity: 1;
   font-weight: 700;
@@ -31909,8 +31872,8 @@ section .heading:not(.heading-nospace) h2 {
 .clb-section label,
 section label {
   font-weight: 600;
-  font-size: -webkit-calc(17px + 1 * ((100vw - 576px)/ 1024));
-  font-size: calc(17px + 1 * ((100vw - 576px) / 1024));
+  font-size: -webkit-calc(21px + 1 * ((100vw - 576px)/ 1024));
+  font-size: calc(21px + 1 * ((100vw - 576px) / 1024));
   color: #232226;
   text-align: inherit;
 }
@@ -32315,7 +32278,7 @@ section-dark .subtitle b {
   max-height: 540px;
 }
 .slider .clb-slider-outer-stage {
-  max-height: 360px;
+  /* max-height: 360px; */
 }
 .clb-hamburger-nav {
   z-index: -1;
@@ -33579,16 +33542,21 @@ section-dark .subtitle b {
   }
   .tg-brands li:nth-child(2),
   .tg-brands li:nth-child(4){
-    border-left: 1px solid #ddd !important;
+    border-left: 1px solid transparent !important;
+  }
+  .tg-brands1 li:nth-child(2),
+  .tg-brands1 li:nth-child(3),.tg-brands1 li:nth-child(4),.tg-brands1 li:nth-child(5)
+  {
+    border-left: 1px solid transparent !important;
   }
   .tg-brands1 li{
     margin: 0;
-    width: 50%;
+    width: 100%;
     float: left;
   }
   .tg-brands li{
     margin: 0;
-    width: 50% !important;
+    width: 100% !important;
     float: left;
   }
   .tg-brands1 li figure a img,
@@ -33631,8 +33599,9 @@ section-dark .subtitle b {
   .tg-brands4 li {
     width: 100%;
   }
-  .tg-brands4 li:nth-child(2) {
-    border-left: 1px solid transparent;
+  .tg-brands4 li:nth-child(2),
+  .tg-brands4 li:nth-child(4){
+    border-left: 1px solid transparent !important;
   }
 }
 
@@ -33760,9 +33729,59 @@ section-dark .subtitle b {
 }
 
 @media (max-width: 560px) {
-  .tg-brand3 {
+  .tg-brands .tg-brand3 {
     width: 50% !important;
     box-sizing: border-box;
   }
 }
 
+
+@media (min-width:769px){
+  .site-header .header-wrap-inner .left-part .clb-hamburger, .clb-popup{
+    display:none !important;
+  }
+}
+.video_placeholder_small{
+  display: none;
+}
+@media (max-width:768px){
+  .video_placeholder_small{
+    display: block;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+  }
+  .video_placeholder_small img{
+    width: 70%;
+  }
+  .main-section > .page-container{
+    padding-top: 4vh;
+  }
+}
+.speakers_mobile{
+  display: none;
+}
+.speakers_large{
+  display: block;
+}
+@media (max-width:768px){
+  .speakers_mobile{
+    display: block;
+  }
+  .speakers_large{
+    display: none;
+  }
+}
+
+.loader{ 
+  background: #54b9e1;
+}
+
+svg {
+  position: absolute;
+  width: 240px;
+  height: 120px;
+  top: 0; right: 0;
+  bottom: 0; left: 0; 
+  margin: auto;
+}

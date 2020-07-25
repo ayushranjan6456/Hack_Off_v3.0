@@ -25,7 +25,16 @@
 	<link rel="stylesheet" href="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/css/main.min.css">
 	<script src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/js/scripts.min.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162530313-1"></script>
-
+	<script type='text/javascript'>
+		/* <![CDATA[ */
+		var yith_wcwl_l10n = { "ajax_url": "\/wp-admin\/admin-ajax.php", "redirect_to_cart": "no", "multi_wishlist": "", "hide_add_button": "1", "enable_ajax_loading": "", "ajax_loader_url": "https:\/\/ohio.clbthemes.com\/wp-content\/plugins\/yith-woocommerce-wishlist\/assets\/images\/ajax-loader-alt.svg", "remove_from_wishlist_after_add_to_cart": "1", "is_wishlist_responsive": "1", "labels": { "cookie_disabled": "We are sorry, but this feature is available only if cookies on your browser are enabled.", "added_to_cart_message": "<div class=\"woocommerce-notices-wrapper\"><div class=\"woocommerce-message\" role=\"alert\">Product added to cart successfully<\/div><\/div>" }, "actions": { "add_to_wishlist_action": "add_to_wishlist", "remove_from_wishlist_action": "remove_from_wishlist", "reload_wishlist_and_adding_elem_action": "reload_wishlist_and_adding_elem", "load_mobile_action": "load_mobile", "delete_item_action": "delete_item", "save_title_action": "save_title", "save_privacy_action": "save_privacy", "load_fragments": "load_fragments" } };
+/* ]]> */
+	</script>
+	<script type='text/javascript'
+		src='wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min6b25.js?ver=2.1.4'></script>
+	<script type='text/javascript'
+		src='wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.minb2f9.js?ver=4.3.0'></script>
+	</script>
 	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.1.2/cjs/css-shim-564371aa.min.js"></script>
 	<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
@@ -40,13 +49,64 @@
 </head>
 
 <body class="custom-cursor">
+	
+	<div class="loader">
+		<svg version="1.1" id="preloader" x="0px" y="0px" width="240px" height="120px" viewBox="0 0 240 120">
+
+			<style type="text/css">
+				<![CDATA[
+				#plug,
+				#socket {
+					fill: #fff
+				}
+
+				#loop-normal {
+					fill: none;
+					stroke: #fff;
+					stroke-width: 12
+				}
+
+				#loop-offset {
+					display: none
+				}
+				]]>
+			</style>
+
+			<path id="loop-normal" class="st1" d="M120.5,60.5L146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5
+			L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0z">
+				<animate attributeName="stroke-dasharray" attributeType="XML" from="500, 50" to="450 50" begin="0s"
+					dur="2s" repeatCount="indefinite" />
+				<animate attributeName="stroke-dashoffset" attributeType="XML" from="-40" to="-540" begin="0s" dur="2s"
+					repeatCount="indefinite" />
+			</path>
+
+			<path id="loop-offset" d="M146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5
+			L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0L120.5,60.5
+			L146.48,87.02z" />
+
+			<path id="socket" d="M7.5,0c0,8.28-6.72,15-15,15l0-30C0.78-15,7.5-8.28,7.5,0z" />
+
+			<path id="plug" d="M0,9l15,0l0-5H0v-8.5l15,0l0-5H0V-15c-8.29,0-15,6.71-15,15c0,8.28,6.71,15,15,15V9z" />
+
+			<animateMotion xlink:href="#plug" dur="2s" rotate="auto" repeatCount="indefinite" calcMode="linear"
+				keyTimes="0;1" keySplines="0.42, 0, 0.58, 1">
+				<mpath xlink:href="#loop-normal" />
+			</animateMotion>
+
+			<animateMotion xlink:href="#socket" dur="2s" rotate="auto" repeatCount="indefinite" calcMode="linear"
+				keyTimes="0;1" keySplines="0.42, 0, 0.58, 1">
+				<mpath xlink:href="#loop-offset" />
+			</animateMotion>
+		</svg>
+	</div>
+
 	<div class="circle-cursor circle-cursor--outer"></div>
 	<div class="circle-cursor circle-cursor--inner"></div>
 	<header id="masthead" class="site-header header-3 both-types no-transition" data-header-fixed="true"
 		data-fixed-initial-offset="150">
 		<div class="header-wrap">
 			<div class="header-wrap-inner">
-				<div class="left-part">
+				<div class="left-part" style="width:6%">
 					<div class="clb-hamburger btn-round btn-round-light" tabindex="1"><i class="ion"><a href="#"
 								class="clb-hamburger-holder" aria-controls="site-navigation" aria-expanded="false"><span
 									class="_shape"></span><span class="_shape"></span></a></i></div>
@@ -116,8 +176,13 @@
 												class="menu-link main-menu-link item-title"
 												id="accessible-megamenu-1579013644524-12"><span>Contact</span></a>
 										</li>
+										<li id="nav-menu-item-25539-5e1dd60a5ab26"
+											class="mega-menu-item nav-item menu-item-depth-0"><a href="#footer"
+												class="menu-link main-menu-link item-title"
+												id="accessible-megamenu-1579013644524-12"><span>Hack Off 2.0</span></a>
+										</li>
 									</ul>
-								</div>
+									<!-- </div>
 								<div class="clb-social vc_hidden-xs">
 									<ul class="clb-social-holder font-titles">
 										<li>Follow Us</li>
@@ -129,18 +194,18 @@
 										<li><a target="_blank" href="https://www.facebook.com/colabrio/"
 												class="instagram">In.</a></li>
 									</ul>
+								</div> -->
 								</div>
 							</div>
-						</div>
-					</nav>
+							<!-- </nav>
 					<ul class="menu-optional">
 						<li><a target="_blank" class="btn purchase-btn small"
 								href="https://1.envato.market/5Q25j"><span>Register for Updates</span></a></li>
-					</ul>
-					<div class="close-menu"></div>
+					</ul> -->
+							<div class="close-menu"></div>
+						</div>
 				</div>
 			</div>
-		</div>
 	</header>
 	<div class="clb-popup clb-hamburger-nav type3">
 		<div class="close-bar text-left">
@@ -210,12 +275,24 @@
 		</div>
 	</div>
 	<section class="main-section clb-section">
-		<div class="page-container">
+		<div class="page-container" style="margin: 0 10%;">
 			<div class="vc_row">
-				<div class="vc_col-lg-6">
+				<div class="video_placeholder_small">
+					<div class="device-screens">
+						<div class="phone device">
+							<div class="device-holder">
+								<picture><img loading="lazy"
+										src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/video-placeholder2.png"
+										alt="Demo screenshot"></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="vc_col-md-8 info">
 					<div class="main-info"><label> <b class="brand-color">12th & 13th </b>December, 2020</label>
 						<div class="main-info-header">
-							<h1>The world is going <br><span class="brand-color" data-dynamic-text="true"
+							<h1>The world is <br class="vc_hidden-lg"> going <br><span class="brand-color"
+									data-dynamic-text="true"
 									data-dynamic-text-options='{"strings":["digital", "crazy", "nuts"],"typeSpeed":120,"backDelay":3000,"backSpeed":50,"loop":true}'><span
 										class="typed-string dynamic"></span></span>&nbsp;<br class="vc_hidden-sm">So are
 								We.</h1>
@@ -247,10 +324,10 @@
 							</div> -->
 						</div>
 					</div>
-					<a target="_blank" class="btn" style="margin-top:30px;"
-						href="https://1.envato.market/5Q25j"><span>Hack Off 2.0</span></a>
+					<a target="_blank" class="btn" style="margin-top:30px;" href=""><span>Register for
+							Updates</span></a>
 				</div>
-				<div class="video_placeholder vc_col-lg-6">
+				<div class="video_placeholder vc_col-md-4">
 					<div class="device-screens">
 						<div class="phone device">
 							<div class="device-holder">
@@ -439,7 +516,7 @@
 	<section class="core-features-section clb-section clb-section-dark clb__dark_section"
 		style="padding:50px 0 20px 0;">
 		<div class="page-container">
-			<div class="vc_row">
+			<div class="vc_row" style="margin: 0 5%">
 				<div class="vc_col-md-6 heading" style="padding-top: 30px;">
 					<h2 class="core-features-header title">
 						Welcome <br class="vc_hidden-md vc_hidden-sm vc_hidden-xs">
@@ -454,8 +531,8 @@
 						Hack Off is inviting young minds from all across the nation to come together to put up the most
 						magnificent show the digital realm has ever seen.</p>
 				</div>
-				<div class="vc_col-md-6 heading" style="height: 100%;">
-					<picture><img loading="lazy" style=" float: right; margin-right: 20%;"
+				<div class="vc_col-md-6 heading vc_hidden-sm" style="height: 100%;">
+					<picture><img loading="lazy" style=" float: right; margin-right: 10%;"
 							src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/wel.png"
 							alt="Demo screenshot"></picture>
 
@@ -623,12 +700,203 @@
 		</div>
 		</div>
 		<div class="page-container" style="padding: 0 5%">
+
 			<div class="demo-heading text-center heading" style="padding-top: 0;">
 				<!-- <label>Quick Getting Started</label> -->
 				<h2 class="title">Our Previous Speakers</h2>
 				<!-- <p class="demo-heading-subtitle subtitle">Choose from pre-made layouts <b>for real business</b>.</p> -->
 			</div>
-			<div class="vc_row demo-items">
+			<div class="ohio-slider-sc slider-wrap speakers_mobile">
+				<div class="slider ohio-slider  full with-preloader" id="ohio-custom-5f1071b21c71f"
+					data-ohio-slider='{"loop":true,"navBtn":true,"autoplay":true,"autoplayHoverPause":true,"autoHeight":true,"slidesCount":true,"gap":"30","navContainerClass":"slider-nav","itemsDesktop":"3","itemsTablet":"2","itemsMobile":"1","autoplayTimeout":"4"}'>
+					<div class="slider-wrap">
+
+						<div class="ohio-testimonial-sc testimonial text-left " id="ohio-custom-5f1071b21c8f5">
+							<a target="_blank" href="#" class="demo-item" data-cursor-class="cursor-link dark-color">
+								<div class="parallax-holder">
+									<div class="demo-item-img parallax">
+										<picture class="scr-shadow"><img loading="lazy__" style="max-height: none;"
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/speakers/ryan.jpg"
+												alt="Demo screenshot">
+											<p class="demo-item-details-heading">Ryan Swift</p>
+										</picture>
+									</div>
+								</div>
+								<div class="demo-item-details text-center">
+									<p class="demo-item-details-heading">Ryan Swift</p>
+									<p class="demo-item-details-category">Coaches Program Manager and Logistics lead</p>
+									<p class="demo-item-details-category">Major League Hacking</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="slider-wrap">
+
+						<div class="ohio-testimonial-sc testimonial text-left " id="ohio-custom-5f1071b21c9f1">
+							<a target="_blank" href="demo10/index.html" class="demo-item"
+								data-cursor-class="cursor-link">
+								<div class="parallax-holder">
+									<div class="demo-item-img parallax">
+										<picture class="scr-shadow"><img loading="lazy__" style="max-height: none;"
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/speakers/sehaj.jpg"
+												alt="Demo screenshot"></picture>
+									</div>
+								</div>
+								<div class="demo-item-details text-center">
+									<p class="demo-item-details-heading">Sehaj Sharma</p>
+									<p class="demo-item-details-category">MRI Visualization</p>
+									<p class="demo-item-details-category">GE Healthcare</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="slider-wrap">
+
+						<div class="ohio-testimonial-sc testimonial text-left " id="ohio-custom-5f1071b21cad8">
+							<a target="_blank" href="demo25/index.html" class="demo-item"
+								data-cursor-class="cursor-link dark-color">
+								<div class="parallax-holder">
+									<div class="demo-item-img parallax">
+										<picture class="scr-shadow"><img loading="lazy__" style="max-height: none;"
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/speakers/anu.jpeg"
+												alt="Demo screenshot"></picture>
+									</div>
+								</div>
+								<div class="demo-item-details text-center">
+									<p class="demo-item-details-heading">Anuhya Challangundhla</p>
+									<p class="demo-item-details-category">MLH Coach</p>
+									<p class="demo-item-details-category">Major League Hacking</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="slider-wrap">
+
+						<div class="ohio-testimonial-sc testimonial text-left " id="ohio-custom-5f1071b21cad8">
+							<a target="_blank" href="demo2/index.html" class="demo-item"
+								data-cursor-class="cursor-link dark-color">
+								<div class="parallax-holder">
+									<div class="demo-item-img parallax">
+										<picture class="scr-shadow"><img loading="lazy__" style="max-height: none;"
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/speakers/abhi.jpg"
+												alt="Demo screenshot"></picture>
+									</div>
+								</div>
+								<div class="demo-item-details text-center">
+									<p class="demo-item-details-heading">Abhitej Singh</p>
+									<p class="demo-item-details-category">Strategy Lead , Co-Founder</p>
+									<p class="demo-item-details-category">Commit network ,Cosmos</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="slider-wrap">
+
+						<div class="ohio-testimonial-sc testimonial text-left " id="ohio-custom-5f1071b21cad8">
+							<a target="_blank" href="demo10/index.html" class="demo-item"
+								data-cursor-class="cursor-link">
+								<div class="parallax-holder">
+									<div class="demo-item-img parallax">
+										<picture class="scr-shadow"><img loading="lazy__" style="max-height: none;"
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/speakers/Deepanshu.jpg"
+												alt="Demo screenshot"></picture>
+									</div>
+								</div>
+								<div class="demo-item-details text-center">
+									<p class="demo-item-details-heading">Deepanshu Tripathi</p>
+									<p class="demo-item-details-category">CTO , Co-Founder</p>
+									<p class="demo-item-details-category">Commit network , Cosmos</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="slider-wrap">
+
+						<div class="ohio-testimonial-sc testimonial text-left " id="ohio-custom-5f1071b21cad8">
+							<a target="_blank" href="demo25/index.html" class="demo-item"
+								data-cursor-class="cursor-link dark-color">
+								<div class="parallax-holder">
+									<div class="demo-item-img parallax">
+										<picture class="scr-shadow"><img loading="lazy__" style="max-height: none;"
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/speakers/Sachin.jpeg"
+												alt="Demo screenshot"></picture>
+									</div>
+								</div>
+								<div class="demo-item-details text-center">
+									<p class="demo-item-details-heading">Sachin S. Pandey</p>
+									<p class="demo-item-details-category">Founder and CEO</p>
+									<p class="demo-item-details-category">Skillship Foundation</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="slider-wrap">
+
+						<div class="ohio-testimonial-sc testimonial text-left " id="ohio-custom-5f1071b21cad8">
+							<a target="_blank" href="demo22/index.html" class="demo-item"
+								data-cursor-class="cursor-link">
+								<div class="parallax-holder">
+									<div class="demo-item-img parallax">
+										<picture class="scr-shadow"><img loading="lazy__" style="max-height: none;"
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/speakers/Harshil_Agrawal.jpeg"
+												alt="Demo screenshot"></picture>
+									</div>
+								</div>
+								<div class="demo-item-details text-center">
+									<p class="demo-item-details-heading">Harshil Agarwal</p>
+									<p class="demo-item-details-category">MLH Coach</p>
+									<p class="demo-item-details-category">Major League Hacking</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="slider-wrap">
+
+						<div class="ohio-testimonial-sc testimonial text-left " id="ohio-custom-5f1071b21cad8">
+							<a target="_blank" href="demo9/index.html" class="demo-item"
+								data-cursor-class="cursor-link dark-color">
+								<div class="parallax-holder">
+									<div class="demo-item-img parallax">
+										<picture class="scr-shadow"><img loading="lazy__" style="max-height: none;"
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/speakers/Sajal_Bansal.jpeg"
+												alt="Demo screenshot"></picture>
+									</div>
+								</div>
+								<div class="demo-item-details text-center">
+									<p class="demo-item-details-heading">Sajal Bansal</p>
+									<p class="demo-item-details-category">Director, MLH Coach</p>
+									<p class="demo-item-details-category">HackCBS</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="slider-wrap">
+
+						<div class="ohio-testimonial-sc testimonial text-left " id="ohio-custom-5f1071b21cad8">
+							<a target="_blank" href="demo13/index.html" class="demo-item"
+								data-cursor-class="cursor-link">
+								<div class="parallax-holder">
+									<div class="demo-item-img parallax">
+										<picture class="scr-shadow"><img loading="lazy__" style="max-height: none;"
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/speakers/sandal.jpeg"
+												alt="Demo screenshot"></picture>
+									</div>
+								</div>
+								<div class="demo-item-details text-center">
+									<p class="demo-item-details-heading">Sandal Kotawala</p>
+									<p class="demo-item-details-category">Founder and CEO</p>
+									<p class="demo-item-details-category">Alfaleus</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<svg class="spinner sk-preloader" viewBox="0 0 50 50">
+					<circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="4"></circle>
+				</svg>
+			</div>
+			<div class="vc_row demo-items speakers_large">
 				<div class="vc_col-lg-4 vc_col-sm-12" data-aos="fade-up" data-aos-delay="0"><a target="_blank" href="#"
 						class="demo-item" data-cursor-class="cursor-link dark-color">
 						<div class="parallax-holder">
@@ -1018,7 +1286,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="showcase-project">
+		<!-- <div class="showcase-project">
 			<div class="page-container">
 				<div class="vc_row showcase-project-icons clb-section-small">
 
@@ -1053,7 +1321,7 @@
 											<div class="parallax-holder">
 												<div class="demo-item-img parallax">
 													<picture class="scr-shadow"><img loading="lazy"
-															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject9_Desktop.jpg 1x, 
+															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject9_Desktop.jpg 1x,
 														https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/SingleProject9_Desktop.jpg 2x"
 															src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject9_Desktop.jpg"
 															alt="Demo screenshot"></picture>
@@ -1064,7 +1332,7 @@
 											<div class="parallax-holder">
 												<div class="demo-item-img parallax">
 													<picture class="scr-shadow"><img loading="lazy"
-															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject8_Desktop.jpg 1x, 
+															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject8_Desktop.jpg 1x,
 														https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/SingleProject8_Desktop.jpg 2x"
 															src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject8_Desktop.jpg"
 															alt="Demo screenshot"></picture>
@@ -1076,7 +1344,7 @@
 											<div class="parallax-holder">
 												<div class="demo-item-img parallax">
 													<picture class="scr-shadow"><img loading="lazy"
-															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject5_Desktop.jpg 1x, 
+															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject5_Desktop.jpg 1x,
                                                         https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/SingleProject5_Desktop.jpg 2x"
 															src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject5_Desktop.jpg"
 															alt="Demo screenshot"></picture>
@@ -1087,7 +1355,7 @@
 											<div class="parallax-holder">
 												<div class="demo-item-img parallax">
 													<picture class="scr-shadow"><img loading="lazy"
-															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject7_Desktop.jpg 1x, 
+															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject7_Desktop.jpg 1x,
 														https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/SingleProject7_Desktop.jpg 2x"
 															src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject7_Desktop.jpg"
 															alt="Demo screenshot"></picture>
@@ -1098,7 +1366,7 @@
 											<div class="parallax-holder">
 												<div class="demo-item-img parallax">
 													<picture class="scr-shadow"><img loading="lazy"
-															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject3_Desktop.jpg 1x, 
+															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject3_Desktop.jpg 1x,
 														https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/SingleProject3_Desktop.jpg 2x"
 															src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject3_Desktop.jpg"
 															alt="Demo screenshot"></picture>
@@ -1109,7 +1377,7 @@
 											<div class="parallax-holder">
 												<div class="demo-item-img parallax">
 													<picture class="scr-shadow"><img loading="lazy"
-															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject4_Desktop.jpg 1x, 
+															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject4_Desktop.jpg 1x,
 														https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/SingleProject4_Desktop.jpg 2x"
 															src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject4_Desktop.jpg"
 															alt="Demo screenshot"></picture>
@@ -1121,7 +1389,7 @@
 											<div class="parallax-holder">
 												<div class="demo-item-img parallax">
 													<picture class="scr-shadow"><img loading="lazy"
-															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject6_Desktop.jpg 1x, 
+															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject6_Desktop.jpg 1x,
 														https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/SingleProject6_Desktop.jpg 2x"
 															src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SingleProject6_Desktop.jpg"
 															alt="Demo screenshot"></picture>
@@ -1134,11 +1402,37 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</section>
 	<section id="sponsors" class="">
 		<div class="page-container" style="padding: 0 10%;">
-			<section id="tg-sponsers" class="tg-sectionspace tg-haslayout">
+			<section id="tg-sponsers" class="tg-sectionspace tg-haslayout" style="padding-top: 0;">
+				<div class="container">
+					<div class="row">
+						<div
+							class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+							<div class="tg-sectionhead">
+								<div class="demo-heading text-center heading" style="padding-top: 0;">
+									<!-- <label>Quick Getting Started</label> -->
+									<h2 class="title">Event Partners</h2>
+									<!-- <p class="demo-heading-subtitle subtitle">Choose from pre-made layouts <b>for real business</b>.</p> -->
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<ul class="tg-brands1" style="display:flex; justify-content:center;">
+								<li class="tg-brand">
+									<figure><a href="https://blockchainedu.org/" target="_blank"><img
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/mlh.png"
+												alt="image description"></a>
+									</figure>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="tg-sponsers" class="tg-sectionspace tg-haslayout" style="padding-top: 0;">
 				<div class="container">
 					<div class="row">
 						<div
@@ -1167,13 +1461,10 @@
 								</li>
 							</ul>
 						</div>
-
 					</div>
-
-
 				</div>
 			</section>
-			<section id="tg-sponsers" class="tg-sectionspace tg-haslayout">
+			<section id="tg-sponsers" class="tg-sectionspace tg-haslayout" style="padding-top: 0;">
 				<div class="container">
 					<div class="row">
 						<div
@@ -1203,7 +1494,8 @@
 									</figure>
 								</li>
 								<li class="tg-brand">
-									<figure><a href="m"><img src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/matic.png"
+									<figure><a href="https://matic.network/" target="_blank"><img
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/matic.png"
 												alt="image description"></a>
 									</figure>
 								</li>
@@ -1233,7 +1525,7 @@
 
 				</div>
 			</section>
-			<section id="tg-sponsers" class="tg-sectionspace tg-haslayout">
+			<section id="tg-sponsers" class="tg-sectionspace tg-haslayout" style="padding-top: 0;">
 				<div class="container">
 					<div class="row">
 						<div
@@ -1241,13 +1533,27 @@
 							<div class="tg-sectionhead">
 								<div class="demo-heading text-center heading" style="padding-top: 0;">
 									<!-- <label>Quick Getting Started</label> -->
-									<h2 class="title">Education Partner</h2>
+									<h2 class="title">Education Partners</h2>
 									<!-- <p class="demo-heading-subtitle subtitle">Choose from pre-made layouts <b>for real business</b>.</p> -->
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<ul class="tg-brands1" style="display: flex; justify-content: center;">
+							<ul class="tg-brands4">
+								<li>
+									<figure><a href="https://www.gitcoin.co/" target="_blank"><img
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/localhost.png"
+												alt="image description"></a>
+									</figure>
+								</li>
+								<li class="tg-brand">
+									<figure><a href="https://devfolio.co/" target="_blank"><img
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/localhackday.png"
+												alt="image description"></a>
+									</figure>
+								</li>
+							</ul>
+							<ul class="tg-brands4" style="display: flex; justify-content:center;">
 								<li class="tg-brand">
 									<figure><a href="https://blockchainedu.org/" target="_blank"><img
 												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/ben.png"
@@ -1256,13 +1562,11 @@
 								</li>
 							</ul>
 						</div>
-
 					</div>
-
-
 				</div>
 			</section>
-			<section id="tg-sponsers" class="tg-sectionspace tg-haslayout" style="padding-top: 30px;">
+
+			<section id="tg-sponsers" class="tg-sectionspace tg-haslayout" style="padding-top: 0;">
 				<div class="container">
 					<div class="row">
 						<div
@@ -1278,11 +1582,33 @@
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<ul class="tg-brands">
 								<li class="tg-brand">
+									<figure><a href="https://www.github.com/" target="_blank"><img
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/git.png"
+												alt="image description"></a>
+									</figure>
+								</li>
+								<li class="tg-brand">
+									<figure><a href="https://www.stickermule.com/en-in" target="_blank"><img
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/sticker.png"
+												alt="image description"></a>
+									</figure>
+								</li>
+								<li class="tg-brand">
+									<figure><a href="https://www.bloomberg.com/" target="_blank"><img
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/bloomberg.png"
+												alt="image description"></a>
+									</figure>
+								</li>
+								<li class="tg-brand">
 									<figure><a href="https://www.sashido.io/" target="_blank"><img
 												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/shashido.png"
 												alt="image description"></a>
 									</figure>
 								</li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<ul class="tg-brands">
 								<li class="tg-brand">
 									<figure><a href="https://www.bugsee.com/" target="_blank"><img
 												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/bugsee.png"
@@ -1301,16 +1627,16 @@
 												alt="image description"></a>
 									</figure>
 								</li>
-							</ul>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<ul class="tg-brands">
-
 								<li class="tg-brand">
 									<figure><a href="https://cloudsploit.com/" target="_blank"><img
-												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/cloudspoilt2.png"
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/cloudspoilt.png"
 												alt="image description"></a></figure>
 								</li>
+							</ul>
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<ul class="tg-brands">
 								<li class="tg-brand">
 									<figure><a href="https://balsamiq.com/" target="_blank"><img
 												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/balsamiq.png"
@@ -1323,20 +1649,20 @@
 								</li>
 								<li class="tg-brand">
 									<figure><a href="https://www.echoar.xyz/" target="_blank"><img
-												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/echo.png"
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/echoar.png"
 												alt="image description"></a>
 									</figure>
 								</li>
-							</ul>
-						</div>
-
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<ul class="tg-brands">
 								<li class="tg-brand">
 									<figure><a href="https://www.voiceflow.com/" target="_blank"><img
 												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/voiceflow.png"
 												alt="image description"></a></figure>
 								</li>
+
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<ul class="tg-brands">
 								<li class="tg-brand">
 									<figure><a href="https://www.wolfram.com/" target="_blank"><img
 												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/wolfram.png"
@@ -1353,32 +1679,36 @@
 												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/codefactor.png"
 												alt="image description"></a></figure>
 								</li>
-							</ul>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<ul class="tg-brands">
 								<li class="tg-brand">
 									<figure><a href="https://testmail.app/" target="_blank"><img
 												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/testmail.png"
 												alt="image description"></a></figure>
 								</li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<ul class="tg-brands">
 								<li class="tg-brand">
 									<figure><a href="https://www.uxpin.com/" target="_blank"><img
 												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/uxpin.png"
 												alt="image description"></a>
 									</figure>
 								</li>
-								<li class="tg-brand hiden">
-									<figure><a href="https://www.uxpin.com/" target="_blank"><img
-												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/12345.png"
+								<li class="hiden tg-brand">
+									<figure><a href="https://egghead.io/" target="_blank"><img
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/1234.png"
 												alt="image description"></a>
 									</figure>
 								</li>
-								<li class="tg-brand hiden">
-									<figure><a href="https://www.uxpin.com/" target="_blank"><img
-												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/12345.png"
-												alt="image description"></a>
-									</figure>
+								<li class="hiden tg-brand">
+									<figure><a href="https://www.codefactor.io/" target="_blank"><img
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/1234.png"
+												alt="image description"></a></figure>
+								</li>
+								<li class="hiden tg-brand">
+									<figure><a href="https://testmail.app/" target="_blank"><img
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/1234.png"
+												alt="image description"></a></figure>
 								</li>
 							</ul>
 						</div>
@@ -1386,7 +1716,7 @@
 
 				</div>
 			</section>
-			<section id="tg-sponsers" class="tg-sectionspace tg-haslayout">
+			<section id="tg-sponsers" class="tg-sectionspace tg-haslayout" style="padding-top: 0;">
 				<div class="container">
 					<div class="row">
 						<div
@@ -1400,7 +1730,7 @@
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<ul class="tg-brands4">
+							<ul class="tg-brands1">
 								<li class="tg-brand">
 									<figure><a href="https://www.cryptopolitan.com/" target="_blank"><img
 												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/crpto.png"
@@ -1413,8 +1743,6 @@
 												alt="image description"></a>
 									</figure>
 								</li>
-							</ul>
-							<ul class="tg-brands4" style="display: flex; justify-content:center;">
 								<li class="tg-brand">
 									<figure><a href="https://thecampusmedia.com/" target="_blank"><img
 												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/tcm.png"
@@ -1425,35 +1753,34 @@
 						</div>
 
 					</div>
+					<!-- 		
+		
+					<div class="text-center	" style="margin-top:50px">
+						<a class="" style="color:#fff" href="/sponsor/">
+							<button class="btn2">
+								SPONSOR US
+							</button>
+						</a>
+					</div> -->
 				</div>
 			</section>
 			<!--<li class="tg-brand"><figure><a href="https://www.producthunt.com/" target="_blank"><img src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/producthunt.png" alt="image description"></a></figure></li>
 										<li class="tg-brand"><figure><a href="https://ubidots.com/" target="_blank"><img src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/ubidots.png" alt="image description"></a></figure></li>-->
 
-			<section id="tg-sponsers" class="tg-sectionspace tg-haslayout" style="padding-bottom: 0px;">
+			<section id="tg-sponsers" class="tg-sectionspace tg-haslayout" style="padding-top: 0;">
 				<div class="container">
-					<div class="row">
-						<div
-							class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
-							<div class="tg-sectionhead">
-								<div class="demo-heading text-center heading" style="padding-top: 0;">
-									<!-- <label>Quick Getting Started</label> -->
-									<h2 class="title">Previous Sponsors</h2>
-									<!-- <p class="demo-heading-subtitle subtitle">Choose from pre-made layouts <b>for real business</b>.</p> -->
-								</div>
-							</div>
-						</div>
+					<div class="demo-heading text-center heading" style="padding-top: 0;">
+						<!-- <label>Quick Getting Started</label> -->
+						<h2 class="title">Previous Sponsors</h2>
+						<!-- <p class="demo-heading-subtitle subtitle">Choose from pre-made layouts <b>for real business</b>.</p> -->
 					</div>
-				</div>
-			</section>
-			<section id="tg-sponsers" class="tg-sectionspace tg-haslayout">
-				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<ul class="tg-brands">
 								<li class="tg-brand3">
 									<figure> <a href="https://www.mlh.io" target="_blank"><img
-												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/mlh3.png"></a> </figure>
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/mlh3.png"></a>
+									</figure>
 								</li>
 								<li class="tg-brand3">
 									<figure><a href="https://www.nvidia.com/en-in/" target="_blank"><img
@@ -1552,6 +1879,10 @@
 												alt="image description"></a>
 									</figure>
 								</li>
+
+
+
+
 							</ul>
 						</div>
 
@@ -1564,7 +1895,8 @@
 								</li>
 								<li class="tg-brand3">
 									<figure><a href="https://gen.xyz/" target="_blank"><img
-												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/xyz3.png"></a></figure>
+												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/brands/xyz3.png"></a>
+									</figure>
 								</li>
 								<li class="tg-brand3">
 									<figure><a href="https://www.sketch.com/" target="_blank"><img
@@ -1669,10 +2001,9 @@
 
 				</div>
 			</section>
-
 			<div class="text-center">
 				<a class="" style="color:#fff" href="/sponsor/">
-					<button class="btn" style="padding:20px 30px;">
+					<button class="btn" style="padding:17px 30px;">
 						SPONSOR US
 					</button>
 				</a>
@@ -2028,7 +2359,7 @@
 								<div class="parallax-holder">
 									<div class="demo-item-img parallax">
 										<picture class="scr-shadow"><img loading="lazy"
-												srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/ProductLayoutType1_Left_Desktop.jpg 1x, 
+												srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/ProductLayoutType1_Left_Desktop.jpg 1x,
 											https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/ProductLayoutType1_Left_Desktop.jpg 2x"
 												src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/ProductLayoutType1_Left_Desktop.jpg"
 												alt="Demo screenshot"></picture>
@@ -2089,7 +2420,7 @@
 										href="cart/index.html" class="demo-item">
 										<div class="parallax-holder">
 											<div class="demo-item-img parallax">
-												<picture class="scr-shadow"><img loading="lazy" srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/Cart_Desktop.jpg 1x, 
+												<picture class="scr-shadow"><img loading="lazy" srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/Cart_Desktop.jpg 1x,
 													https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/Cart_Desktop.jpg 2x"
 														src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/Cart_Desktop.jpg"
 														alt="Demo screenshot"></picture>
@@ -2100,7 +2431,7 @@
 										href="shop/index.html" class="demo-item">
 										<div class="parallax-holder">
 											<div class="demo-item-img parallax">
-												<picture class="scr-shadow"><img loading="lazy" srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/PageLayout__Shop.jpg 1x, 
+												<picture class="scr-shadow"><img loading="lazy" srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/PageLayout__Shop.jpg 1x,
 													https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/PageLayout__Shop.jpg 2x"
 														src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/PageLayout__Shop.jpg"
 														alt="Demo screenshot"></picture>
@@ -2112,7 +2443,7 @@
 										<div class="parallax-holder">
 											<div class="demo-item-img parallax">
 												<picture class="scr-shadow"><img loading="lazy"
-														srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/OrderReceived_Desktop.jpg 1x, 
+														srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/OrderReceived_Desktop.jpg 1x,
 													https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/OrderReceived_Desktop.jpg 2x"
 														src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/OrderReceived_Desktop.jpg"
 														alt="Demo screenshot"></picture>
@@ -2123,7 +2454,7 @@
 										href="my-account/index.html" class="demo-item">
 										<div class="parallax-holder">
 											<div class="demo-item-img parallax">
-												<picture class="scr-shadow"><img loading="lazy" srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/Checkout_Desktop.jpg 1x, 
+												<picture class="scr-shadow"><img loading="lazy" srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/Checkout_Desktop.jpg 1x,
 													https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/Checkout_Desktop.jpg 2x"
 														src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/Checkout_Desktop.jpg"
 														alt="Demo screenshot"></picture>
@@ -2265,7 +2596,7 @@
 											<div class="parallax-holder">
 												<div class="demo-item-img parallax">
 													<picture class="scr-shadow"><img loading="lazy"
-															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SinglePost_DesktopFullscreen.jpg 1x, 
+															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SinglePost_DesktopFullscreen.jpg 1x,
 														https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/SinglePost_DesktopFullscreen.jpg 2x"
 															src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SinglePost_DesktopFullscreen.jpg"
 															alt="Demo screenshot"></picture>
@@ -2276,7 +2607,7 @@
 											<div class="parallax-holder">
 												<div class="demo-item-img parallax">
 													<picture class="scr-shadow"><img loading="lazy"
-															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SinglePost_Desktop.jpg 1x, 
+															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SinglePost_Desktop.jpg 1x,
 														https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/SinglePost_Desktop.jpg 2x"
 															src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/SinglePost_Desktop.jpg"
 															alt="Demo screenshot"></picture>
@@ -2287,7 +2618,7 @@
 											<div class="parallax-holder">
 												<div class="demo-item-img parallax">
 													<picture class="scr-shadow"><img loading="lazy"
-															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/BlogLayoutType2_Desktop.jpg 1x, 
+															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/BlogLayoutType2_Desktop.jpg 1x,
 														https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/BlogLayoutType2_Desktop.jpg 2x"
 															src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/BlogLayoutType2_Desktop.jpg"
 															alt="Demo screenshot"></picture>
@@ -2298,7 +2629,7 @@
 											<div class="parallax-holder">
 												<div class="demo-item-img parallax">
 													<picture class="scr-shadow"><img loading="lazy"
-															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/BlogLayoutType1_Desktop.jpg 1x, 
+															srcset="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/BlogLayoutType1_Desktop.jpg 1x,
 														https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/retina/BlogLayoutType1_Desktop.jpg 2x"
 															src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/BlogLayoutType1_Desktop.jpg"
 															alt="Demo screenshot"></picture>
@@ -2460,14 +2791,14 @@
 	</section>-->
 
 	<footer id="footer" class=" site-footer  clb__dark_section">
-		<div class="page-container">
+		<div class="page-container" style="padding: 0;">
 			<div class="widgets vc_row" style="padding: 30px 40px;">
 				<div class="vc_col-lg-3 vc_col-sm-6 widgets-column">
 					<ul>
 						<li id="ohio_widget_logo-3" class="widget widget_ohio_widget_logo">
-							<div class="theme-logo ">
+							<div class="theme-logo " style="padding-right: 5%;">
 								<a href="#">
-									Hack Off
+									<img src="colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/logo	.png" alt="Hack Off">
 								</a>
 							</div>
 						</li>
@@ -2492,7 +2823,7 @@
 						<li id="custom_html-4" class="widget_text widget widget_custom_html">
 							<h3 class="title widget-title">For inquiries</h3>
 							<div class="textwidget custom-html-widget">
-								<b>support@hackoff.tech</b></div>
+								<a href="mailto:support@hackoff.tech"><b style="color: #17161a; font-weight: 700;">support@hackoff.tech</b></a></div>
 						</li>
 						<li id="custom_html-10" class="widget_text widget widget_custom_html">
 							<div class="textwidget custom-html-widget"><b>Ph: +XXXXXXXXXX</b></div>
@@ -2552,9 +2883,7 @@
 			<li><a target="_blank" href="https://www.facebook.com/colabrio/" class="instagram">In.</a></li>
 		</ul>
 	</div> -->
-	<div class="loader">
-		<div class="loader-counter">0</div>
-	</div>
+
 
 
 
