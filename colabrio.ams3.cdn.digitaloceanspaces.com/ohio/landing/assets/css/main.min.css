@@ -3227,7 +3227,7 @@ p.text-small {
   display: block;
 }
 .accordion .accordionItem_title {
-  background-color: rgba(86, 84, 88, 0.452);
+  background-color: rgba(255, 255, 255, 0.26);
   width: 100%;
   height: 54px;
   padding: 0 20px;
@@ -9527,6 +9527,7 @@ p.text-small {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   min-height: 348px;
+  box-shadow: 0px 4.06557px 25.4098px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .service {
@@ -9551,7 +9552,7 @@ p.text-small {
   font-size: 42px;
 }
 .service_icon img {
-  max-width: 60px;
+  max-width: 75px;
 }
 .service_title {
   margin: 0;
@@ -31696,6 +31697,7 @@ section {
   color: #fff;
   background-color: #54b9e1;
 }
+
 @media screen and (min-width: 769px) {
   .loader {
     height: 100%;
@@ -33762,7 +33764,7 @@ section-dark .subtitle b {
     width: 70%;
   }
   .main-section > .page-container{
-    padding-top: 4vh;
+    padding-top: 0;
   }
 }
 .speakers_mobile{
@@ -33794,11 +33796,14 @@ svg {
 }
 
 #tracks .service{
-  min-height: 500px !important;
+  min-height: 460px !important;
   margin-bottom: 40px;
 }
 
-
+.entry-title{
+  padding-top: 20px;
+  font-size: 25px;
+}
 
 .swiper-container {
   width: 100%;
@@ -33848,4 +33853,21 @@ svg {
  .swiper-container{
    display: block;
  }
+ #tracks .service{
+  margin-bottom: 20px;
+}
+
+}
+
+.hc-row{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.hc-row .hc-col{
+  width:35%
+}
+.hc-row .hc-col2{
+  width:65%
 }
