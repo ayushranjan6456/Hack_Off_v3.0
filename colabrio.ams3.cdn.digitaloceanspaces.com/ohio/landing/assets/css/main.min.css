@@ -5309,6 +5309,7 @@ p.text-small {
 .ohio-slider-sc
   > .slider:not(.nav-offset):not(.nav-inset)
   > .clb-slider-nav-btn {
+    display:none;
   padding: 0;
   -webkit-transform: translateY(13px);
   -ms-transform: translateY(13px);
@@ -5344,6 +5345,7 @@ p.text-small {
 @media screen and (max-width: 768px) {
   .ohio-slider-sc .clb-slider-count {
     margin-top: 20px;
+    right: -40%;
   }
 }
 .ohio-slider-sc .with-preloader {
@@ -9524,6 +9526,7 @@ p.text-small {
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+  min-height: 348px;
 }
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .service {
@@ -10866,6 +10869,7 @@ section.widget:first-child .widget-title {
 }
 html {
   width: 100%;
+  overflow-x: hidden;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -33784,4 +33788,9 @@ svg {
   top: 0; right: 0;
   bottom: 0; left: 0; 
   margin: auto;
+}
+
+#tracks .service{
+  min-height: 500px !important;
+  margin-bottom: 40px;
 }
