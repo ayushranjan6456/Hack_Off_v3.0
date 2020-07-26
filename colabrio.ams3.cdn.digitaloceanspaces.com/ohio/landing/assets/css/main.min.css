@@ -33667,7 +33667,9 @@ section-dark .subtitle b {
 .tg-brands li:nth-child(1),
 .tg-brands li:nth-child(2),
 .tg-brands li:nth-child(3),
-.tg-brands li:nth-child(4) {
+.tg-brands li:nth-child(4),
+ .tg-brands li:nth-child(5),
+ .tg-brands li:nth-child(6)  {
   border-bottom: 1px solid #ddd;
 }
 .tg-brands li:nth-child(1),
@@ -33677,6 +33679,7 @@ section-dark .subtitle b {
 .tg-brands li:nth-child(2),
 .tg-brands li:nth-child(3),
 .tg-brands li:nth-child(4),
+.tg-brands li:nth-child(5),
 .tg-brands li:nth-child(6),
 .tg-brands li:nth-child(7),
 .tg-brands li:nth-child(8) {
@@ -33734,10 +33737,17 @@ section-dark .subtitle b {
   display: block;
 }
 
+.tg-brand3{
+  width: 16.6667% !important;
+}
+
 @media (max-width: 560px) {
   .tg-brands .tg-brand3 {
     width: 50% !important;
     box-sizing: border-box;
+  }
+  .tg-brand3{
+    border-left: 0px solid #ddd !important;
   }
 }
 
@@ -33800,6 +33810,8 @@ svg {
   margin-bottom: 40px;
 }
 
+
+
 .entry-title{
   padding-top: 20px;
   font-size: 25px;
@@ -33855,6 +33867,8 @@ svg {
  }
  #tracks .service{
   margin-bottom: 20px;
+  min-height: 200px !important;
+  padding-bottom: 20px;
 }
 
 }
@@ -33870,4 +33884,96 @@ svg {
 }
 .hc-row .hc-col2{
   width:65%
+}
+
+.cls-2 {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 5000;
+  animation: dash-2 3s ease alternate infinite;
+}
+
+@keyframes dash-2 {
+  from {
+    stroke-dashoffset: 3000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.cls-1 {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 5000;
+  animation: dash-1 3s ease alternate infinite;
+}
+
+@keyframes dash-1 {
+  from {
+    stroke-dashoffset: 3000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.cls-3 {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 2000;
+  animation: dash-3 3s linear alternate infinite;
+}
+
+@keyframes dash-3 {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.cls-4 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 2100;
+  animation: dash-4 3s linear alternate infinite;
+}
+
+@keyframes dash-4 {
+  from {
+    stroke-dashoffset: 1700;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.cls-5 {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 2200;
+  animation: dash-5 3s linear alternate infinite;
+}
+
+@keyframes dash-5 {
+  from {
+    stroke-dashoffset: 1700;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.cls-6 {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 600;
+  animation: dash-6 3s linear alternate infinite;
+}
+
+@keyframes dash-6 {
+  from {
+    stroke-dashoffset: 700;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.loader svg{
+  height: 60%;
+  width: 60%;
 }
