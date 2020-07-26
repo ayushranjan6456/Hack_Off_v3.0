@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="184px" viewBox="0 0 1440 184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Vector" transform="translate(-10.000000, 0.000000)" fill="#69386f" fill-rule="nonzero">
+            <path d="M0,5.93824547 C35.4042979,0.935119353 137.035188,-15.069715 248.454693,41.5527863 C370.825736,103.739988 471.066135,69.322287 576.115705,41.5526863 C643.556874,23.7249859 786.315539,26.737786 876.925513,73.0859871 C986.345225,129.055988 1046.08528,178.15799 1198.1743,178.15799 C1339.5897,178.15799 1442.27798,114.768988 1449.5884,103.643988 L1449.5884,102.067988 C1450.14222,102.261988 1450.13215,102.803988 1449.5884,103.643988 L1449.5884,620 L734.513237,620 L0,620 L0,5.93824547 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,80 @@
+/*=============================================
+			Theme Color One
+=============================================*/
+/*=============================================
+			Theme Color
+=============================================*/
+a,
+p a,
+p a:hover,
+a:hover,
+a:focus,
+a:active,
+.tg-navigation ul li:hover > a,
+.tg-nav ul li a.current,
+.tg-eventcounter span:first-child,
+.tg-package .tg-packagedetail h4 span,
+.tg-article:hover .tg-title h2 a,
+.tg-article:hover .tg-btnreadmore,
+.tg-btndownload:hover i,
+.tg-btnfarword i,
+.tg-btnopenclose i,
+.tg-close,
+.tg-headervtwo .tg-nav ul li:hover a,
+.tg-headervtwo .tg-nav ul li a.current,
+.tg-bannerregister .tg-heading h2,
+.tg-postdetail blockquote,
+.tg-widgetcontent ul li:hover a,
+.tg-widgetcontent ul li:hover a span,
+.tg-authorname h4:hover a{color: #2b0c24 ;}
+/*=============================================
+			Theme Background Color
+=============================================*/
+.tg-theme-tag,
+.tg-btn:before,
+.tg-article:hover .tg-btnreadmore:before,
+.tg-eventschedulenav li.active a,
+.tg-eventschedulenav li:hover a,
+.tg-btnfarword:hover,
+.tg-btnopenclose:hover,
+.tg-bannerregister .tg-heading:before,
+.tg-btnvisitwebsite,
+.tg-postdate,
+.tg-tag:hover,
+.tg-formfeedbacksearch button{background:#964f9f ;}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.navbar-toggle .icon-bar{background:#964f9f  !important;}
+/*=============================================
+			Theme Border Color
+=============================================*/
+.tg-theme-tag:after,
+.tg-theme-tag:before,
+input:focus,
+.select select:focus,
+.form-control:focus,
+.tg-footer,
+.tg-btndownload:hover,
+.tg-eventschedulenav li.active a,
+.tg-eventschedulenav li:hover a,
+.tg-eventschedulenav,
+.tg-eventvenuetabs li.active a,
+.tg-eventvenuetabs li:hover a,
+.tg-btnfarword:hover,
+.tg-btnopenclose:hover,
+.tg-eventschedulecontent,
+.sub-menu{border-color:#964f9f ;}
+.navbar-toggle{border-color:#2b0c24  !important;}
+/*=============================================
+			Theme Color Two
+=============================================*/
+/*=============================================
+			Theme Color
+=============================================*/
+/*=============================================
+			Theme Background Color
+=============================================*/
+.tg-sectionheading:before{background: #964f9f ;}
+.t2 .tg-sectionheading:before{background: #2b0c24;}
+/*=============================================
+			Theme Border Color
+=============================================*/

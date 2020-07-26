@@ -1,0 +1,108 @@
+html{
+  scroll-behavior: smooth;
+}
+.main-timeline{ font-family: 'Cairo', sans-serif; }
+.main-timeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.title{
+  color: white;
+  text-transform: uppercase;
+}
+.main-timeline .timeline{
+    width: 80%;
+    float: left;
+}
+.main-timeline .timeline-content{
+    color: #fff;
+    background: linear-gradient(to right, #964f9f,#964f9f);
+    padding: 20px 20px 20px 170px;
+    margin: 0 0 60px;
+    border-radius: 100px 0 0;
+    display: block;
+    position: relative;
+}
+.main-timeline .timeline-content:hover{ text-decoration: none; }
+.main-timeline .timeline-icon{
+    color: #fff;
+    background: linear-gradient(to right, #964f9f,#964f9f);
+    font-size: 50px;
+    line-height: 100px;
+    text-align: center;
+    height: 120px;
+    width: 120px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -60px;
+    left: 20px;
+}
+.main-timeline .title{
+    font-family: 'Arial', cursive;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+}
+.main-timeline .description{
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.main-timeline .timeline:nth-child(even){
+    margin: -60px 0 60px;
+    float: right;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content{
+    padding: 20px 170px 20px 20px;
+    margin: 60px 0 0;
+    border-radius: 0 0 100px 0;
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-icon{
+    left: auto;
+    right: 20px;
+    bottom: auto;
+    top: -60px;
+}
+.main-timeline .timeline:nth-child(4n+2) .timeline-content,
+.main-timeline .timeline:nth-child(4n+2) .timeline-icon{
+    background: linear-gradient(to right, #2b0c28,#2b0c28);
+}
+.main-timeline .timeline:nth-child(4n+3) .timeline-content,
+.main-timeline .timeline:nth-child(4n+3) .timeline-icon{
+    background: linear-gradient(to right, #964f9f,#964f9f);
+}
+.main-timeline .timeline:nth-child(4n+4) .timeline-content,
+.main-timeline .timeline:nth-child(4n+4) .timeline-icon{
+    background: linear-gradient(to right, #2b0c28,#2b0c28);
+}
+@media screen and (max-width:767px){
+    .main-timeline .timeline,
+    .main-timeline .timeline:nth-child(even){
+        width: 100%;
+        margin: 0 0 15px;
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(even) .timeline-content{
+        padding: 60px 15px 15px 15px;
+        margin: 40px 0 0;
+        border-radius: 0 0 50px 0;
+    }
+    .main-timeline .timeline-icon,
+    .main-timeline .timeline:nth-child(even) .timeline-icon{
+        font-size: 30px;
+        line-height: 60px;
+        height: 80px;
+        width: 80px;
+        right: 15px;
+        left: auto;
+        top: -40px;
+    }
+}
+@media screen and (max-width:567px){
+    .main-timeline .title{ font-size: 18px; }
+}

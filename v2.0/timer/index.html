@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <style>
+            * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:white;
+}
+
+.container {
+  color:black;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+/* general styling */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+        </style>
+    </head>
+    <body>
+            
+        <br>	
+        <div class="container">
+            <h1 id="head"> <h1>
+                <br>
+                <br>
+                    <a href="https://www.mlh.io" target="_blank"><img src="html/images/logo.png" style="max-width: 20rem;padding-left:10px;"></a>
+            <ul>
+            
+              <li><span id="days"></span>days</li>
+              <li><span id="hours"></span>Hours</li>
+              <li><span id="minutes"></span>Minutes</li>
+              <li><span id="seconds"></span>Seconds</li>
+
+            </ul>
+            <a href="https://www.mlh.io" target="_blank"><img src="html/event_organizer/images/brands/mlh.svg" style="max-width: 20rem"></a>
+          </div>
+          
+          
+    <script>
+    const second = 1000,
+  minute = second * 60,
+  hour = minute * 60,
+  day = hour * 24;
+
+let countDown = new Date("Dec 15, 2019 14:00:00").getTime(),
+  x = setInterval(function() {
+    let now = new Date().getTime(),
+      distance = countDown - now;
+
+    (document.getElementById("days").innerText = Math.floor(distance / day)),
+      (document.getElementById("hours").innerText = Math.floor(
+        (distance % day) / hour
+      )),
+      (document.getElementById("minutes").innerText = Math.floor(
+        (distance % hour) / minute
+      )),
+      (document.getElementById("seconds").innerText = Math.floor(
+        (distance % minute) / second
+      ));
+
+    //do something later when date is reached
+    //if (distance < 0) {
+    //  clearInterval(x);
+    //  'IT'S MY BIRTHDAY!;
+    //}
+  }, second);
+
+    </script>
+    </body>
+
+</html>
