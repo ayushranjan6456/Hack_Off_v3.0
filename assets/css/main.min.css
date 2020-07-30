@@ -33799,6 +33799,18 @@ svg {
   min-height: 460px !important;
   margin-bottom: 40px;
 }
+#tracks .strip{
+  position: relative;
+  top: -15px;
+  height: 5px;
+  background-color: #273059;
+  z-index: 5;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
 
 
 
