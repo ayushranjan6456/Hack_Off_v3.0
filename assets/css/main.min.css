@@ -34003,3 +34003,10 @@ svg {
   height: 60%;
   width: 60%;
 }
+
+@media (min-width:568px){
+  .tg-centered{
+    display: flex;
+  justify-content: center;
+  }
+}
