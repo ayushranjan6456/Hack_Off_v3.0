@@ -33746,9 +33746,6 @@ section-dark .subtitle b {
   .site-header .header-wrap-inner .left-part .clb-hamburger, .clb-popup{
     display:none !important;
   }
-  .swiper-container{
-    display:none;
-  }
 }
 .video_placeholder_small{
   display: none;

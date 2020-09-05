@@ -672,7 +672,7 @@
 				<!-- Add Pagination -->
 				<div class="swiper-pagination"></div>
 			</div>
-			<div class="vc_row demo-items speakers_large">
+			<!-- <div class="vc_row demo-items speakers_large">
 				<div class="vc_col-lg-4 vc_col-md-6 vc_col-sm-12 flt_agency flt_info flt_portfolio" data-aos="fade-up" data-aos-delay="0"><a target="_blank" href="#"
 						class="demo-item" data-cursor-class="cursor-link dark-color">
 						<div class="parallax-holder">
@@ -821,7 +821,7 @@
 					</a>
 				</div>
 				</>
-			</div>
+			</div> -->
 	</section>
 
 
@@ -2741,6 +2741,29 @@
 
 		var swiper = new Swiper('.swiper-container', {
 			speed: 800,
+			loop: true,
+			slidesPerView: 4,
+			breakpoints: {
+				// when window width is >= 320px
+				290:{
+					slidesPerView: 1,
+				spaceBetween: 20
+				},
+				430: {
+				slidesPerView: 2,
+				spaceBetween: 20
+				},
+				// when window width is >= 480px
+				580: {
+				slidesPerView: 3,
+				spaceBetween: 30
+				},
+				// when window width is >= 640px
+				800: {
+				slidesPerView: 4,
+				spaceBetween: 40
+				}
+			},
 			spaceBetween: 30,
 			centeredSlides: true,
 			autoplay: {
