@@ -34007,3 +34007,145 @@ svg {
   justify-content: center;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .btns-center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  }
+  
+
+
+  .card1{
+    background-color: #ffffff;
+    border-radius: 12px 0 0 12px;
+    -webkit-border-radius: 12px 0 0 12px;
+    -moz-border-radius: 12px 0 0 12px;
+    -ms-border-radius: 12px 0 0 12px;
+    -o-border-radius: 12px 0 0 12px;
+  }
+  .card3{
+    background-color: #ffffff;
+    border-radius:  0 12px 12px 0;
+    -webkit-border-radius:  0 12px 12px 0;
+    -moz-border-radius:  0 12px 12px 0;
+    -ms-border-radius:  0 12px 12px 0;
+    -o-border-radius:  0 12px 12px 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    overflow: hidden;
+}
+
+.card2{
+  padding: 60px 30px;
+}
+
+.card4{
+  padding: 40px 48px !important;
+}
+
+@media (max-width: 1430px){
+.card1{
+  padding: 60px 30px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  .card1{
+    border-radius: 12px 12px 0 0;
+    -webkit-border-radius: 12px 12px 0 0;
+    -moz-border-radius: 12px 12px 0 0;
+    -ms-border-radius: 12px 12px 0 0;
+    -o-border-radius: 12px 12px 0 0;
+}.card3{
+  background-color: #ffffff;
+  border-radius:  0 0 12px 12px;
+  -webkit-border-radius:  0 0 12px 12px;
+  -moz-border-radius:  0 0 12px 12px;
+  -ms-border-radius:  0 0 12px 12px;
+  -o-border-radius:  0 0 12px 12px;
+  position:relative !important;
+}
+.card2{
+  padding-top: 15px;
+}
+.card4{
+  padding: 30px 20px !important;
+}
+    }
+
+
+.cardmain{
+  background-color: #54b9e1;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.33);
+-moz-box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.33);
+box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.33);
+}
+
+.btn2:hover{
+  background-color: #000000 !important;
+}
+
+  /* Parallax base styles
+  --------------------------------------------- */
+
+  .parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+  }
+  .parallax::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+  .parallax {
+    font-size: 200%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+   /* add some padding to force scrollbars */
+  .parallax__layer {
+    padding: 100vh 0;
+  }
+
+   /* centre the content in the parallax layers */
+  .titlex {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
