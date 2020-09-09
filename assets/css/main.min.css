@@ -9562,7 +9562,7 @@ p.text-small {
   margin-top: 15px;
   margin-bottom: 20px;
   font-size: 1.2rem;
-  text-align: center;
+  font-weight: 500;
 }
 .service_list {
   margin: 0;
@@ -33795,7 +33795,7 @@ svg {
 }
 
 #tracks .service{
-  min-height: 260px !important;
+  min-height: 280px !important;
   margin-bottom: 40px;
 }
 #tracks .strip{
@@ -33813,7 +33813,7 @@ svg {
 
 @media (max-width: 1340px){
   #tracks .service{
-    min-height: 275px !important;
+    min-height: 290px !important;
     margin-bottom: 40px;
   }
 }
@@ -34200,4 +34200,15 @@ box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.33);
 #toggle-btn{
   background-color: rgba(255, 255, 255, 0) !important;
   border: rgba(255, 255, 255, 0) !important;
+}
+
+
+.blockquote:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  top: -47px;
+  left: 10px;
+  content:"\0022";
+  font-size: 100px;
+  color: rgba(0,0,0,0.07);   
 }
