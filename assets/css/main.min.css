@@ -33795,7 +33795,7 @@ svg {
 }
 
 #tracks .service{
-  min-height: 250px !important;
+  min-height: 260px !important;
   margin-bottom: 40px;
 }
 #tracks .strip{
@@ -33811,7 +33811,25 @@ svg {
   -o-border-radius: 10px 10px 0 0;
 }
 
+@media (max-width: 1340px){
+  #tracks .service{
+    min-height: 275px !important;
+    margin-bottom: 40px;
+  }
+}
 
+@media (max-width: 768px){
+  #tracks .service{
+    min-height: 290px !important;
+    width: 30vw;
+  }
+}
+@media (max-width: 740px){
+  #tracks .service{
+    min-height: 0px !important;
+    width: 90vw;
+  }
+}
 
 .entry-title{
   padding-top: 20px;
@@ -33866,12 +33884,6 @@ svg {
  .swiper-container{
    display: block;
  }
- #tracks .service{
-  margin-bottom: 20px;
-  min-height: 200px !important;
-  padding-bottom: 20px;
-  width: 90vw;
-}
 
 }
 
@@ -34044,7 +34056,7 @@ svg {
 }
 
 .card2{
-  padding: 60px 30px;
+  padding: 30px;
 }
 
 .card4{
@@ -34053,7 +34065,7 @@ svg {
 
 @media (max-width: 1430px){
 .card1{
-  padding: 60px 30px;
+  padding: 80px 30px;
 }
 
 }
@@ -34093,6 +34105,17 @@ svg {
   -webkit-box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.33);
 -moz-box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.33);
 box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.33);
+}
+
+
+.btn2{
+  margin-top: 40px !important;
+}
+
+@media (max-width: 1320px){
+  .btn2{
+    margin-top: 15px !important;
+  }
 }
 
 .btn2:hover{
