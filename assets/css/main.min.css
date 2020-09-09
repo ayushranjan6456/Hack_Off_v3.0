@@ -3287,6 +3287,7 @@ p.text-small {
 }
 .accordion .accordionItem_content .wrap {
   padding: 20px;
+  text-align: justify;
 }
 .accordion .accordionItem_content .wrap p {
   margin: 0;
@@ -9526,7 +9527,7 @@ p.text-small {
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  min-height: 348px;
+  min-height: 50px;
   box-shadow: 0px 4.06557px 25.4098px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -9560,7 +9561,7 @@ p.text-small {
 .service_subtitle {
   margin-top: 15px;
   margin-bottom: 20px;
-  font-size: 0.94rem;
+  font-size: 1.2rem;
 }
 .service_list {
   margin: 0;
@@ -33793,7 +33794,7 @@ svg {
 }
 
 #tracks .service{
-  min-height: 460px !important;
+  min-height: 300px !important;
   margin-bottom: 40px;
 }
 #tracks .strip{
@@ -33868,6 +33869,7 @@ svg {
   margin-bottom: 20px;
   min-height: 200px !important;
   padding-bottom: 20px;
+  width: 90vw;
 }
 
 }
