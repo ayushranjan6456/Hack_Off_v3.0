@@ -9562,6 +9562,7 @@ p.text-small {
   margin-top: 15px;
   margin-bottom: 20px;
   font-size: 1.2rem;
+  text-align: center;
 }
 .service_list {
   margin: 0;
