@@ -14176,8 +14176,8 @@ textarea {
   display: none;
 }
 .site-content {
-  min-height: -webkit-calc(100vh - 107px);
-  min-height: calc(100vh - 107px);
+  /* min-height: -webkit-calc(100vh - 107px);
+  min-height: calc(100vh - 107px); */
   background-color: #fff;
 }
 i.ion {
@@ -33795,7 +33795,7 @@ svg {
 }
 
 #tracks .service{
-  min-height: 300px !important;
+  min-height: 250px !important;
   margin-bottom: 40px;
 }
 #tracks .strip{
